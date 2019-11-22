@@ -20,10 +20,12 @@ export default class PigPen extends React.Component {
     this.audio = new Audio(exclaim)
   }
 
-  relax = () => {
-    const newState = {environment: 'docile'}
-    this.setState(newState)
-  }
+  // we do not need this function in both places - PigPen & GalaxySNote7
+
+  // relax = () => {
+  //   const newState = {environment: 'docile'}
+  //   this.setState(newState)
+  // }
 
   alterEnvironment = (vibe) => {
     if (vibe === "inhospitable")
